@@ -1,0 +1,569 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  font-family: 'heebo', sans-serif;
+  margin: 0;
+  font-size: 16px;
+  background: #000;
+  text-align: left;
+	position: absolute;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%;
+	overflow-x: fixed;
+  line-height: 170%;
+}
+a,a:link,a:visited
+{
+ color:#cccccc;
+ text-decoration:none;
+}
+a:hover{
+	text-decoration: underline;
+}
+td{
+  vertical-align: top;
+  height: 10%;
+	padding: 0 1% 0 1%;
+}
+/*menu*/
+.menu {
+padding-top: 0px;
+width: 100%;
+background-color: #000;
+position: fixed;
+left: 0%;
+z-index: 1;
+height: 10%;
+letter-spacing: 5px;
+}
+.worklink{
+  position: relative;
+  z-index: 1;
+  margin-left: 25%;
+  margin-top: 1%;
+  background: black;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+	width: 7%;
+	margin-top: 5%;
+}
+.aboutlink{
+  position: relative;
+  z-index: 1;
+  margin-left: 2%;
+  margin-top: 1%;
+  background: black;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+	width: 7%;
+	margin-top: 5%;
+}
+.downloadslink{
+  position: relative;
+  z-index: 1;
+  margin-left: 20%;
+  margin-top: 1%;
+  background: black;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+	width: 7%;
+	margin-top: 5%;
+}
+/*footer*/
+.footer{
+  position: relative;
+  width: 100%;
+  height: 20%;
+  bottom: inherit;
+  background-color: #fff;
+  color: #000;
+  padding: 0%;
+  font-size: 80%;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 0%;
+}
+.footerc1{
+  width: 100%;
+  margin-left: 0%;
+  padding: 0%;
+  letter-spacing: 10px;
+  color: black;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 4%;
+  font-size: 200%;
+}
+a.footerc1:hover{
+  color: black;
+}
+/*landing page*/
+.projectcontentmob{
+	position: relative;
+	width: 90%;
+	display: block;
+	align-content: center;
+	padding-top: 20%;
+}
+.mobimg{
+	position: relative;
+	width: 50%;
+	image-resolution: from-image;
+	margin-left: 30%;
+	margin-top: 10%;
+}
+.mobtext{
+	width: 100%;
+	color: white;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-left: 5%;
+	font-size: 80%;
+	border-bottom: 1px;
+	border-color: white;
+	border-style: solid;
+}
+.projectscontentdesk{
+	position: relative;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	font-size: 80%;
+	display: none;
+}
+/*hover FX*/
+.projects {
+  padding: 1rem;
+}
+.projects:before, .projects:after {
+  content: "";
+  display: table;
+}
+.projects:after {
+  clear: both;
+}
+.projects > * {
+  float: left;
+}
+
+.proj {
+  position: relative;
+  width: 20%;
+  margin: 5% 15%;
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+}
+.proj * {
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+}
+.proj:hover .proj-img {
+  opacity: 0.5;
+  -webkit-transform: translate3d(30px, 0, 0) scale(0.9);
+  transform: translate3d(30px, 0, 0) scale(0.9);
+}
+.proj:hover .proj-txt {
+  opacity: 1;
+  left: 75%;
+}
+.proj-img {
+  width: 100%;
+}
+.proj-txt {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  opacity: 0;
+  width: 50%;
+  min-width: 120px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*about*/
+.back{
+  width: 100%;
+  height: 92%;
+  position: relative;
+  color: black;
+}
+.about{
+  width: 50%;
+  background: black;
+  color: #8F8F8F;
+  padding: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+	display: none;
+}
+.aboutmobile{
+  width: 85%;
+  background: black;
+  color: #8F8F8F;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+	margin-left: 5%;
+	display: block;
+	padding-top: 20%;
+}
+div.about:hover{
+  color: white;
+}
+.timeline{
+  width: 95%;
+  background: black;
+  color: #8f8f8f;
+  padding: 1%;
+  text-align: left;
+  font-size: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+div.timeline:hover{
+  color: white;
+}
+.assets{
+  width: 95%;
+  background: black;
+  color: white;
+  padding: 1%;
+	color: #8f8f8f;
+  text-align: left;
+  font-size: 100%;
+  padding-left: 7.5%;
+  padding-right: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+div.assets:hover{
+  color: white;
+}
+.assets1{
+  position: relative;
+  display: inline-block;
+  width: 40%;
+  vertical-align: text-top;
+  text-align: left;
+  padding-right: 1%;
+  font-weight: bold;
+  font-size: 80%;
+}
+.assets2{
+  position: relative;
+  display: inline-block;
+  width: 45%;
+  vertical-align: text-top;
+  font-size: 80%;
+}
+/*individual pages common stuff*/
+.insideproject{
+	position: relative;
+	background: #000000;
+	width: 80%;
+	top: 10%;
+	left: 10%;
+	text-align: left;
+  padding-top: 20%;
+}
+.skillstools{
+  font-size: 100%;
+  width: 95%;
+  margin-left: 0%;
+  margin-top: 0%;
+  padding-top: 0%;
+  position: relative;
+  color: #8F8F8F;
+  display: inline-block;
+  vertical-align: text-top;
+}
+div.skillstools:hover{
+  color: white;
+}
+.insideprojecttext{
+  font-size: 80%;
+  width: 95%;
+  margin-left: 0%;
+  margin-right: 11.5%;
+  margin-top: 5%;
+  position: relative;
+  color: #8F8F8F;
+  display: inline-block;
+  vertical-align: text-top;
+  padding-bottom: 5%;
+}
+div.insideprojecttext:hover{
+  color: white;
+}
+.insideprojectlinks{
+	position: relative;
+	background: #000000;
+	color: #8F8F8F;
+	width: 100%;
+	top: 0%;
+	left: 1%;
+	text-align: center;
+	font-size: 80%;
+	padding-bottom: 10%;
+}
+#insideprojectimg{
+	position: relative;
+	background: #000000;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	display: block;
+	margin: 0px;
+	height: auto;
+  max-width: auto;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.img01{
+margin: 0px;
+width: 100%;
+align-items: content;
+padding-top: 0%;
+}
+.PSimg{
+margin: 0px;
+width: 75%;
+align-items: content;
+padding-top: 10%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+border-color: white;
+border-width: thin;
+}
+#content img {
+	display: inline-block;
+}
+ .video{
+	 position: relative;
+	 padding-top: 5%;
+	 padding-left: 0%;
+	 padding-bottom: 5%;
+	 align-items: center;
+ }
+ .sc{
+	position: relative;
+	padding-top: 10%;
+	padding-left: 17.5%;
+	padding-bottom: 5%;
+	align-items: center;
+	width: 50%;
+	margin-left: 7.5%;
+	height: 10%;
+ }
+
+@media only screen and (min-width: 768px) {
+/*menu*/
+.menu {
+display: flex;
+height: 10%;
+}
+.worklink{
+  position: relative;
+  z-index: 1;
+  margin-left: 38%;
+  background: black;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+	width: 7%;
+	margin-top: 2%;
+}
+.aboutlink{
+  position: relative;
+  z-index: 1;
+  margin-left: 2%;
+  background: black;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+	width: 7%;
+	margin-top: 2%;
+}
+.downloadslink{
+  position: relative;
+  z-index: 1;
+  margin-left: 35%;
+  background: black;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+	width: 7%;
+	margin-top: 2%;
+}
+/*index*/
+.projectscontentdesk{
+	display: block;
+}
+.projectcontentmob{
+	width: 90%;
+	display: none;
+}
+/*about*/
+  .about{
+    width: 50%;
+    display: inline-block;
+    height: 80%;
+    margin-left: 21%;
+    text-align: center;
+    font-size: 140%;
+    vertical-align: text-top;
+    margin-top: 5%;
+    font-size: 160%;
+    padding-right: 1%;
+    padding-top: 2%;
+		line-height: 40px;
+  }
+	.aboutmobile{
+	  display: none;
+	}
+  .timeline{
+  width: 50%;
+  left: 0%;
+  margin-left: 5%;
+  margin-right: 0%;
+  align-self: center;
+  display: inline-block;
+  height: 80%;
+  vertical-align: text-top;
+  margin-top: 5%;
+  border: none;
+  text-align: left;
+  padding: 1%;
+  padding-top: 2%;
+  }
+  .assets{
+  width: 40%;
+  left: 0%;
+  margin-left: 60%;
+  margin-right: 20%;
+  align-self: center;
+  display: inline-block;
+  background: black;
+  height: 80%;
+  color: #8F8F8F;
+  padding: 1%;
+  padding-top: 2%;
+  text-align: left;
+  font-size: 140%;
+  vertical-align: text-top;
+  margin-top: 5%;
+  font-size: 100%;
+	margin-bottom: 5%;
+  }
+  /*solo project pages*/
+  .insideproject{
+  	padding-top: 2%;
+  	align-items: center;
+		margin-bottom:5%;
+  }
+	.insideprojecttext{
+	  font-size: 80%;
+	  width: 40%;
+	  margin-left: 5%;
+	  margin-right: 11.5%;
+	  margin-top: 10%;
+	  position: relative;
+	  color: #8F8F8F;
+	  display: inline-block;
+	  vertical-align: text-top;
+	  padding-bottom: 5%;
+	}
+	.skillstools{
+		width: 30%;
+	  margin-left: 11.5%;
+		margin-top: 10%;
+	  margin-top: 0%;
+	  padding-top: 10%;
+	  position: relative;
+	  color: #8F8F8F;
+	  display: inline-block;
+	  vertical-align: text-top;
+	}
+  .insideprojectimg{
+  	position: relative;
+  	background: #000000;
+  	width: 100%;
+  	top: 0%;
+  	left: 6%;
+  }
+  .img01{
+  	width: 100%;
+  	align-items: center;
+  }
+  .container{
+  	width: 100%;
+  	position: relative;
+  }
+
+}
